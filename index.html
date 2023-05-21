@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>Budayaku</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/logo-budaya.png"/>
+ <!-- Font Awesome icons (free version)-->
+ <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+ <!-- Google fonts-->
+ <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+ <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+
+  
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  
+  <!-- carousel-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<style>
+  .judul {
+    text-align: center;
+    color: #005061;
+    margin-bottom: 50px;
+    margin-top: 90px;
+
+  }
+
+  .teks {
+    text-align: left;
+    color: #242525;
+
+
+  }
+
+  .postingan img {
+    width: 380px;
+    height: 290px;
+    border-radius: 5%;
+    -webkit-box-shadow: 1rem 1rem 0 rgba(77, 77, 77, 0.1);
+    box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+
+
+  .postingan {
+    margin-left: -150px;
+    margin-right: -200px;
+    margin-top: 180px;
+    display: flex;
+    gap: 70px;
+
+  }
+
+  .post-subjudul {
+    font-size: 17px;
+  }
+
+
+  .post-preview img {
+    width: 300px;
+    height: 210px;
+    transition: width 1s, height 1s;
+    -webkit-box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 1rem 1rem 0 rgba(0, 0, 0, 0.1);
+
+  }
+
+  .post-preview img:hover {
+    width: 320px;
+    height: 230px;
+  }
+
+  .post-preview {
+    margin-left: -150px;
+    margin-right: -200px;
+
+    display: flex;
+    gap: 70px;
+
+  }
+
+  .post-preview1 {
+    margin-left: -150px;
+    margin-right: -200px;
+    display: flex;
+    gap: 70px;
+    text-align: center;
+  }
+
+  .post-meta {
+    color: rgb(130, 128, 128);
+    font-size: 15px;
+  }
+
+  .btn {
+    margin-right: 90px;
+    background-color: #333434;
+    margin-bottom: 100px;
+  }
+</style>
+
+<body>
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <div class="container px-4 px-lg-5">
+      <a class="navbar-brand" href="index.html"><img width="50" src="assets/img/logo-budaya.png" class="header-logo" alt="" /> Budayaku</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto py-4 py-lg-0">
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Beranda</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="galeri.html">Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Artikel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.php">Contact us</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html"> About</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Page Header-->
+  <header class="masthead" style="background-image: url('assets/img/homebg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <div class="site-heading">
+            <h2>Kebudayaan Indonesia</h2>
+            <span class="subheading">Mewujudkan bangsa Indonesia yang cerdas dan berbudaya</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content-->
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <h4 class="judul">Selamat Datang ! <br><br></h4>
+
+
+        <!-- Post preview-->
+        <div class="post-preview1">
+          <p>Budayaku adalah website yang memberikan informasi menarik mengenai berbagai situs budaya yang begitu penuh makna dan penuh keluhuran budi pekerti yang sangat menarik untuk diketahui oleh bangsa kita saat ini. Situs ini bertujuan memperkenalkan dan memberikan kekayaan kebudayaan yang dimiliki Indonesia. Dalam situs ini, masyarakat bisa mendapatkan informasi tentang kekayaan yang dimiliki Indonesia dalam bentuk artikel dan galeri.</p>
+
+
+
+          </a>
+
+        </div>
+        <!-- Divider-->
+        <hr class="my-4" /><br><br><br>
+
+
+
+
+
+
+
+        <!-- Post preview-->
+        <div class="post-preview">
+          <a href="bulung-artikel.html"><img src="assets/img/bulung_kuah_pindang_1200.jpg" alt=""></a>
+
+          <a href="bulung-artikel.html">
+            <h5>Kuliner</h5>
+            <h2 class="post-title">
+              Olahan Rumput Laut Bercita Rasa Gurih Pedas Khas Bali
+            </h2>
+            <h4 class="post-subtitle">
+              Hidangan ini populer dengan sebutan bulung kuah pindang. Bulung merupakan sebutan lokal untuk rumput laut.
+            </h4>
+
+            <p class="post-meta">
+              <small>Tradisi |
+                <i>Posted</i>
+                on June 14, 2021</small>
+            </p>
+          </a>
+
+        </div>
+        <!-- Divider-->
+        <hr class="my-4" />
+
+
+
+
+
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+          <!-- Indicators/dots -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          </div>
+
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner"><br><br>
+            <div class="carousel-item active">
+              <video autoplay muted loop width="100%">
+                <source src="assets/video/cinematic.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/wayang.jpg" alt="wayang" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/candi_mendut_1200.jpg" alt="candi" class="d-block" style="width:100%">
+            </div>
+
+          </div>
+
+          <!-- Left and right controls/icons -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+
+
+
+        <!-- Divider-->
+        <br>
+        <hr class="my-4" />
+
+        <!-- Post preview-->
+        <div class="postingan">
+          <a href="galeri.html"><img src="assets/img/SumateraBarat-Rumah-Gadang.jpeg" alt=""></a>
+
+          <a href="galeri.html">
+            <h2 class="teks">
+              Rumah Gadang,Sumatera Barat
+            </h2>
+            <p class="teks">
+              Rumah Gadang atau rumah godang adalah rumah adat Minangkabau. Ornamen rumah ini juga banyak ditemui di seluruh Indonesia, khususnya di rumah makan Padang. Rumah adat ini punya bentuk ...
+            </p>
+
+
+
+          </a>
+
+        </div>
+        <!-- Pager-->
+        <div class="d-flex justify-content-end mb-4">
+          <a class="btn btn-primary text-uppercase" href="galeri.html">Selengkapnya →</a>
+        </div>
+        <!-- Divider-->
+        <hr class="my-4" />
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Post preview-->
+        <div class="post-preview">
+
+
+          <a href="reog-artikel.html">
+            <h5>Kesenian</h5>
+            <h2 class="post-title">
+              Reog Ponorogo Pertunjukan Penuh Makna
+            </h2>
+            <h4 class="post-subtitle">
+              Sebuah seni pertunjukan tua yang bertahan dari gempuran zaman. Memiliki...
+            </h4>
+
+            <p class="post-meta">
+              <small>Kesenian |
+                <i>Posted</i>
+                on April 16, 2021</small>
+            </p>
+          </a>
+          <a href="post.html"><img src="assets/img/reog-ponorogo.jpg" alt=""></a>
+        </div>
+        <!-- Divider-->
+        <hr class="my-4" />
+
+        <!-- Pager-->
+        <div class="d-flex justify-content-end mb-4">
+          <a class="btn btn-primary text-uppercase" href="post.html">Selengkapnya →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer-->
+  <footer class="border-top" style="background-color: rgb(26, 25, 25);">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#!">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="small text-center text-muted fst-italic">
+            Copyright &copy; Aramita Nur Azizah
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Core theme JS-->
+  <script src=">js/scripts.js"></script>
+</body>
+
+</html>

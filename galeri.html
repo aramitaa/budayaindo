@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Budayaku</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/logo-budaya.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+
+    <style>
+
+
+
+
+
+
+section#gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+section#gallery div {
+  padding: 10px;
+}
+section#gallery div img {
+  height: 100px;
+  border-radius: 5px;
+}
+section#gallery div img:hover {
+  transition: all 0.2s ease-in-out;
+  transform: scale(1.1);
+}
+
+
+.judul{
+  text-align: center;
+  color: #005061;
+  margin-bottom: 50px;
+  margin-top: 90px;
+  
+}
+
+.teks{
+  text-align: center;
+  display: flex;
+  width: 1000px;
+  margin: auto;
+}
+
+.layar-dalam{
+    display: flex;
+  width: 1000px;
+  margin: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  
+}
+
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+}
+
+
+.next{
+    align-items: center;
+    margin-right: 120px;
+    margin-top: 50px;
+}
+
+section.abuabu {
+  background-color: #e9ebebe1;
+  padding: 20px;
+}
+
+section.putihh {
+  background-color: #ffffffe1;
+  padding: 20px;
+}
+
+.btnn-primary {
+  color: rgb(10, 9, 9);
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 15px;
+  text-align: center;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+  
+}
+.btnn-primary:hover {
+  color: rgb(42, 85, 142);
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 15px;
+  text-align: center;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  align-items: center;
+}
+
+button .btnn{
+  text-align: center;
+}
+
+.modal-body{
+font-size: 17px;
+}
+    </style>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index.html"><img width="50"  src="assets/img/logo-budaya.png" class="header-logo" alt=""/> Budayaku</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Beranda</a></li>
+                        <li class="nav-item">
+                          <a class="nav-link px-lg-3 py-3 py-lg-4" href="galeri.html"
+                            >Galeri</a
+                          >
+                        </li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html">Artikel</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.php">Contact Us</a></li>
+
+                        <li class="nav-item" >
+                          <a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html"> About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/galeri-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Galeri</h1>
+                            <span class="subheading"> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+
+       
+
+        <main class="mb-4">
+            <section id="gallery">
+                <div><img src="assets/img/kuliner-tiwul.jpg" /></div>
+                <div><img src="assets/img/tari-saman.jpg" /></div>
+                <div><img src="assets/img/tradisi-kebo.jpg" /></div>
+                <div><img src="assets/img/kain-tenun.jpg" /></div>
+                <div><img src="assets/img/teater.jpg" /></div>
+                <div><img src="assets/img/nasi-jamblang.jpg" /></div>
+                <div><img src="assets/img/tokoh.jpg" /></div>
+                <div><img src="assets/img/museum-gedong.jpg" /></div>
+              </section>
+
+              
+              <h4 class="judul">Rumah Adat Indonesia</h4>
+              <span class="teks">Rumah adat Indonesia sangat beragam mengingat bahwa Indonesia merupakan negara yang kaya akan suku dan budaya.Tidak heran apabila ternyata Indonesia pun punya banyak sekali jenis rumah adat sesuai dengan daerahnya. Jika dihitung berdasarkan jumlah provinsi, setidaknya ada 34 jenis rumah adat. Tapi, setiap provinsi pun bahkan punya rumah adat lebih dari satu.</span>
+<br><br><br>
+
+<div class="layar-dalam">
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="assets/img/SumateraBarat-Rumah-Gadang.jpeg">
+              <img src="assets/img/SumateraBarat-Rumah-Gadang.jpeg" alt="rumah gadang" width="600" height="400">
+            </a>
+            <div class="container mt-3">
+  
+              <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rgadang">
+                <small> <strong>Sumatera Barat</strong>: Rumah Gadang   </small>
+              </button>
+            </div>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="rgadang">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Sumatera Barat <small> : Rumah Gadang</small></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Rumah Gadang atau rumah godang adalah rumah adat Minangkabau. Ornamen rumah ini juga banyak ditemui di seluruh Indonesia, khususnya di rumah makan Padang.
+                    Rumah adat ini punya bentuk puncak atap yang runcing, menyerupai tanduk kerbau. Dulunya atap ini dibuat dari bahan ijuk dan bisa bertahan sampai puluhan tahun. Tetapi belakangan, atap rumah banyak berganti dengan seng.<br><br>
+                    Rumahnya dibangun dengan bentuk empat persegi panjang, dibagi atas 2 bagian yakni depan dan belakang. Bagian depan biasanya penuh dengan ukiran ornamen bermotif akar, bunga, dan daun. Sedangkan bagian luar belakang dilapisi belahan bambu.
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+          
+       <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="assets/img/rumah-panjang.jpg">
+              <img src="assets/img/rumah-panjang.jpg" alt="rumah panjang" width="600" height="400">
+            </a>
+            <div class="container mt-3">
+  
+              <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rpanjang">
+                <small> <strong>Kalimantan</strong>: Rumah Panjang   </small>
+              </button>
+            </div>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="rpanjang">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Kalimantan <small> : Rumah Panjang</small></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Rumah adat Provinsi Kalimantan Barat ini mempunyai ukuran yang besar dan terdiri dari dua bagian, yaitu bangunan atas dan bawah.
+
+Rumah ini sangat unik karena memadukan kesan modern dan tradisional sekaligus. Arsitektur Rumah Panjang bertema budaya Suku Dayak pada beberapa sisi bangunannya.
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+          
+       <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="assets/img/Riau-Rumah-Adat-Selaso-Jatuh.jpeg">
+              <img src="assets/img/Riau-Rumah-Adat-Selaso-Jatuh.jpeg" alt="rumah selaso jatuh" width="600" height="400">
+            </a>
+            <div class="container mt-3">
+  
+              <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rselaso">
+                <small> <strong>Riau</strong>: Selaso Jatuh Kembar   </small>
+              </button>
+            </div>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="rselaso">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Riau <small> : Selaso Jatuh Kembar</small></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Rumah ini memiliki arti rumah dengan dua selasar. Masyarakat Riau tidak menjadikan Rumah Selaso Jatuh Kembar sebagai tempat tinggal mereka, tetapi hanya menggunakannya untuk acara adat.
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+          
+       <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="assets/img/Jambi-Rumah-Panggung.jpeg">
+              <img src="assets/img/Jambi-Rumah-Panggung.jpeg" alt="rumah panggung" width="600" height="400">
+            </a>
+            <div class="container mt-3">
+  
+              <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rpanggung">
+                <small> <strong>Jambi</strong>: Rumah Panggung   </small>
+              </button>
+            </div>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="rpanggung">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Jambi <small> : Rumah Panggung</small></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Rumah adat provinisi dari Jambi ini adalah desain yang tertua di daerah tersebut, dengan bentuk persegi panjang. Rumah Adat Panggung dilengkapi dengan tangga di depan rumah.<br><br>
+
+Orang-orang sering menyebutkan bagian atap dari Rumah Panggung ini sebagai “Gajah Mabuk” karena bentuknya yang menyerupai perahu dengan ujung melengkung. Biasanya, rumah adat dari Jambi digunakan untuk tempat tinggal dan juga tempat bermusyawarah.
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+
+        
+
+        <div class="clearfix"></div>
+              
+              <div style="padding:15px;"></div>
+    </div>
+    
+    <div class="layar-dalam">
+       
+              
+           <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="assets/img/Sumatera-Selatan-Rumah-Limas.jpeg">
+                  <img src="assets/img/Sumatera-Selatan-Rumah-Limas.jpeg" alt="rumah limas" width="600" height="400">
+                </a>
+                <div class="container mt-3">
+  
+                  <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rlimas">
+                    <small> <strong>Sumatera Selatan</strong>: Rumah Limas  </small>
+                  </button>
+                </div>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="rlimas">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Sumatera Selatan <small> : Rumah Limas</small></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Rumah adat satu ini memiliki bentuk yang sesuai dengan namanya, yaitu menyerupai limas. Tamu yang berkunjung ke rumah ini harus singgah ke ruang atas atau teras rumah. Hal ini merupakan tradisi masyarakat Sumatera Selatan agar dapat merasakan budaya mereka, yang tampak pada ukiran di dalamnya.
+                      </div>
+                
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+           <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="assets/img/Banten-Rumah-Baduy.jpeg">
+                  <img src="assets/img/Banten-Rumah-Baduy.jpeg" alt="rumah baduy" width="600" height="400">
+                </a>
+                <div class="container mt-3">
+  
+                  <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rbaduy">
+                    <small> <strong>Banten</strong>: Rumah Baduy  </small>
+                  </button>
+                </div>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="rbaduy">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Banten <small> : Rumah Baduy</small></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Rumah adat dari Banten ini merupakan tempat tinggal suku Baduy, yang merupakan suku asli di wilayah tersebut. Biasanya, suku Baduy membuat rumah ini menggunakan bambu dan ijuk untuk atapnya.
+<br><br>
+Suku Baduy juga memiliki asas kekeluargaan yang amat kental. Inilah yang membuat mereka membangun rumah secara gotong royong sebagai tempat tinggal.
+                      </div>
+                
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+              
+           <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="assets/img/DKI-Jakarta-Rumah-Kebaya.jpeg">
+                  <img src="assets/img/DKI-Jakarta-Rumah-Kebaya.jpeg" alt="rumah kebaya" width="600" height="400">
+                </a>
+                <div class="container mt-3">
+  
+                  <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rkebaya">
+                    <small> <strong>DKI Jakarta</strong>: Rumah Kebaya   </small>
+                  </button>
+                </div>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="rkebaya">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">DKI Jakarta <small> : Rumah Kebaya</small></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Rumah Kebaya dari DKI Jakarta mengusung corak khas suku Betawi. Atap dari rumah ini menyerupai pelana terlipat dan memiliki corak-corak yang khas seperti kebaya.
+<br><br>
+Rumah Kebaya memiliki teras yang luas bertujuan untuk menjadi tempat santai keluarga dan menyambut tamu.  
+                      </div>
+                
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+           </div>
+              
+           <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="assets/img/Jawa-Tengah-Rumah-Joglo.jpeg">
+                  <img src="assets/img/Jawa-Tengah-Rumah-Joglo.jpeg" alt="rumah joglo" width="600" height="400">
+                </a>
+                <div class="container mt-3">
+  
+                  <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rjoglo">
+                    <small> <strong>Jawa Tengah</strong>: Rumah Joglo   </small>
+                  </button>
+                </div>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="rjoglo">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Jawa Tengah <small> : Rumah Joglo</small></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Rumah Joglo Biasanya, bagian depan rumah akan ada pendopo untuk menjamu tamu.
+
+Rumah adat Jawa Tengah ini memiliki empat tiang penopang. Selain itu, Anda juga bisa melihat sentuhan kejawen dari suku Jawa di sisi-sisi rumah.
+                      </div>
+                
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+            <div class="clearfix"></div>
+              
+            <div style="padding:15px;"></div>
+
+            
+</div>
+
+
+
+
+<section class="abuabu">
+<h4 class="judul">Kuliner Indonesia</h4>
+              <span class="teks">Makanan khas daerah – Indonesia tidak hanya mempesona dengan wisata alam dan baharinya saja, melainkan juga menawarkan pesona dari kelezatan kuliner khas nusantaranya. Berikut ini kuliner khas Indonesia sekaligus provinsi asalnya.</span>
+<br><br><br>
+
+<div class="layar-dalam">
+    <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="assets/img/rendang-sumatera-barat.jpg">
+              <img src="assets/img/rendang-sumatera-barat.jpg" alt="rendang" width="600" height="400">
+            </a>
+
+            <div class="container mt-3">
+  
+              <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#rendang">
+                <small> <strong>Sumatera Barat</strong>: Rendang   </small>
+              </button>
+            </div>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="rendang">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Sumatera Barat <small> : Rendang</small></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Makanan ini memang sangat terkenal karena bukan hanya karena asal daerahnya saja namun memang rendang merupakan salah satu makanan terlezat di dunia.<br><br>Anda bisa menemukan makanan ini di rumah makan khas padang atau di tempat lainnya yang memang menyediakan menu khas padang.
+
+                    Rendang terbuat dari daging sapi yang dimasak dengan bumbu rempah yang banyak sehingga rasanya sangat lezat dan kuat.
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+        
+
+          </div>
+       </div>
+          
+       <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="assets/img/Gulai-Ikan-Patin-jambi.jpg">
+              <img src="assets/img/Gulai-Ikan-Patin-jambi.jpg" alt="Gulai ikan patin" width="600" height="400">
+            </a>
+            <div class="container mt-3">
+  
+              <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#gulai">
+                <small> <strong>Jambi</strong>: Gulai Ikan Patin   </small>
+              </button>
+            </div>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="gulai">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Jambi <small> : Gulai Ikan Patin</small></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Gulai ini dimasak dengan daging durian yang telah difermentasi atau sering disebut dengan tempoyak.
+
+
+
+Anda bisa membayangkan berapa rasa dari gulai ikan patin akan sangat khas dan juga unik.
+
+Saat ini gulai ikan patin sudah lebih banyak dimasak dengan menggunakan santan kelapa karena baunya tidak menyengat seperti jika menggunakan tempoyak.
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+          
+       <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="assets/img/Mie-Aceh.jpg">
+              <img src="assets/img/Mie-Aceh.jpg" alt="mie aceh" width="600" height="400">
+            </a>
+            <div class="container mt-3">
+  
+              <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#miaceh">
+                <small> <strong>Provinsi Aceh</strong>: Mie Aceh   </small>
+              </button>
+            </div>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="miaceh">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Aceh <small> : Mie Aceh</small></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Makanan ini memang sangat terkenal bukan hanya di tengah masyarakat aceh saja melainkan juga dikenal oleh masyarakat luar aceh karena citarasanya sangat istimewa.
+
+<br><br>Perbedaan mie aceh dengan mie di daerah lain adalah mie aceh memiliki tekstur yang lebih tebal dan biasanya disajikan dengan daging dan disiram sop sejenis kari yang pedas dan gurih.
+
+Rasa makanan ini memang sangat kaya rempah sehingga terasa begitu nikmat.
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+          
+       <div class="responsive">
+        <div class="gallery">
+            <a target="_blank" href="assets/img/Gulai-Belacan-riau.jpg">
+              <img src="assets/img/Gulai-Belacan-riau.jpg" alt="gulai belacan" width="600" height="400">
+            </a>
+             <div class="container mt-3">
+  
+              <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#belacan">
+                <small> <strong>Provinsi Riau</strong>: Gulai Belacan   </small>
+              </button>
+            </div>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="belacan">
+              <div class="modal-dialog">
+                <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Riau <small> : Gulai Belacan</small></h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Masyarakat riau juga memiliki makananannya sendiri. Jika anda berkunjung ke bengkulu sebaiknya mencoba untuk menikmati makanan yang terbuat dari bahan dasar ikan atau udang.
+
+Makanan ini merupakan makanan yang tidak kalah dengan gulai ikan patin. Masyarakat disana menyebutnya gulai belacan.<br><br> Makanan ini merupakan makanan yang dibuat dari bahan ikan atau udang yang dibumbui dengan campuran kuah belacan atau terasi.
+
+Rasa dari makanan ini sangat khas dan juga nikmat sehingga anda akan sangat menyukainya.
+                  </div>
+            
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                  </div>
+            
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
+
+        
+
+        <div class="clearfix"></div>
+              
+              <div style="padding:15px;"></div>
+    </div>
+    
+    <div class="layar-dalam">
+       
+              
+           <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="assets/img/Pempek.jpg">
+                  <img src="assets/img/Pempek.jpg" alt="Pempek" width="600" height="400">
+                </a>
+                <div class="container mt-3">
+  
+                  <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#pempek">
+                    <small> <strong>Palembang</strong>: Pempek   </small>
+                  </button>
+                </div>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="pempek">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Palembang <small> : Pempek</small></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Empek-empek adalah makanan khas dari sumatera selatan yang saat ini sudah banyak dijual di berbagai wilayah di indonesia.
+
+Makanan ini memang sangat lezat karena terbuat dari bahan sagu dan ikan yang kemudian akan di sajikan dengan kuah dari air, gula merah, cabe, bawang, garam, udang ebi dan sedikit cuka.<br>Pempek sangat nikmat dan gurih karena terasa kenyal dan juga begitu terasa sekali aroma ikannya.
+                      </div>
+                
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+           <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="assets/img/Nasi-Gudeg-jogja.jpg">
+                  <img src="assets/img/Nasi-Gudeg-jogja.jpg" alt="nasi gudeg" width="600" height="400">
+                </a>
+                <div class="container mt-3">
+  
+                  <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#gudeg">
+                    <small> <strong>Yogyakarta</strong>: Nasi Gudeg   </small>
+                  </button>
+                </div>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="gudeg">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Yogyakarta <small> : Nasi Gudeg</small></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Yang sudah merasakan berwisata ke kota yogyakarta tentunya sudah pernah merasakan makanan khas jogja ini.
+
+
+
+Gudeg salah satu menu makanan yang cukup populer di kota istimewa ini. Dibuat dari kuah santan kental, krecek, cabai, daging ayam atau telor.
+                      </div>
+                
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+              
+           <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="assets/img/Ayam-betutu-bali.jpg">
+                  <img src="assets/img/Ayam-betutu-bali.jpg" alt="ayam betutu" width="600" height="400">
+                </a>
+                <div class="container mt-3">
+  
+                  <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#betutu">
+                    <small> <strong>Provinsi Bali</strong>  :  Ayam Betutu  </small>
+                  </button>
+                </div>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="betutu">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Bali <small> : Ayam Betutu</small></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Betutu adalah lauk yang terbuat dari ayam atau bebek yang utuh yang berisi bumbu, kemudian dipanggang dalam api sekam. Betutu ini telah dikenal di seluruh kabupaten di Bali. Betutu merupakan jenis makanan tradisional daerah Bali yang bahan mentahnya berupa karkas utuh itik dan ayam.
+                      </div>
+                
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+              
+           <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="assets/img/Gado-gado-Betawi.jpg">
+                  <img src="assets/img/Gado-gado-Betawi.jpg" alt="soto banjar" width="600" height="400">
+                </a>
+                <div class="container mt-3">
+  
+                  <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#gadogado">
+                    <small> <strong>Betawi </strong>: Gado-Gado  </small>
+                  </button>
+                </div>
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="gadogado">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                
+                      <!-- Modal Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Betawi <small> : Gado-Gado</small></h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                
+                      <!-- Modal body -->
+                      <div class="modal-body">
+                        Gado-gado sangat menarik karena tampilan aslinya memang sangat enak. Makanan khas jakarta ini berasal dari bahan dasar sayuran yang direbus kemudian diberi bumbu kacang dan diberi beraneka toping menggoda.
+<br><br>
+Makanan ini sangat digemari oleh semua kalangan karena memang rasanya nikmat dan juga kaya akan gizi karena berisi banyak sayuran seperti bayam toge, kol dan yang lainnya. Makanan ini akan sangat mudah ditemukan di warung makan pinggir jalan atau bahkan dijual oleh para pedagang keliling. Cita rasa makanan ini sama menggodanya seperti gambar yang ada.
+                      </div>
+                
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                      </div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </div>
+
+            <div class="clearfix"></div>
+              
+            <div style="padding:15px;"></div>
+
+            
+</div>
+
+
+</section>
+
+          
+
+
+
+<section class="putihh">
+  <h4 class="judul">Upacara Adat Indonesia</h4>
+                <span class="teks">Setiap daerah mempunyai macam-macam upacara adat dengan karakteristik dan kepercayaannya masing-masing.Upacara adat umumnya diadakan secara turun menurun di wilayah tertentu sesuai dengan kepercayaan masyarakat setempat.
+
+                  Tujuan dari setiap upacara adat pun berbeda-beda, misalnya diadakan untuk pernikahan, kelahiran, atau pun kematian seseorang.</span>
+  <br><br><br>
+  
+  <div class="layar-dalam">
+      <div class="responsive">
+          <div class="gallery">
+              <a target="_blank" href="assets/img/ngaben-bali.jpg">
+                <img src="assets/img/ngaben-bali.jpg" alt="ngaben" width="600" height="400">
+              </a>
+  
+              <div class="container mt-3">
+    
+                <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#ngaben">
+                  <small> <strong>Bali</strong>: Upacara Ngaben   </small>
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal fade" id="ngaben">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Bali  <small> : Ngaben</small></h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Upacara adat ngaben merupakan upacara pembakaran jenazah umat Hindu di Bali. Ritual ini dilakukan untuk mengembalikan roh ke leluhur ke tempat asalnya. <br><br>Tujuan upacara ngaben adalah mempercepat ragha sarira agar dapat dikembalikan ke asalnya, yaitu panca maha buthadi alam ini dan bagi atma dapat cepat menuju alam pitra. <br> <br>Prosesi ngaben dilakukan antara tiga sampai tujuh hari setelah jenazah meninggal, namun ada juga yang dilakukan sebulan setelah jenazah meninggal. <br><br> Setelah proses kremasi, abu jenazah dihanyutkan ke laut atau sungai.
+
+
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+          
+  
+            </div>
+         </div>
+            
+         <div class="responsive">
+          <div class="gallery">
+              <a target="_blank" href="assets/img/bakarbatu-papua.jpg">
+                <img src="assets/img/bakarbatu-papua.jpg" alt="pesta bakar batu" width="600" height="400">
+              </a>
+              <div class="container mt-3">
+    
+                <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#batu">
+                  <small> <strong>Papua</strong>: Pesta Bakar Batu   </small>
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal fade" id="batu">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Papua <small> : Bakar Batu</small></h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Upacara adat Bakar Batu yang berlangsung di tanah Papua. Upacara adat ini adalah sebuah ungkapan syukur sekaligus untuk bersilaturahmi.
+
+Rangkaian upacara adat yang satu ini diadakan dengan membakar sumber makanan dari hewan-hewan dan makan secara bersama-sama.
+  
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+            
+         <div class="responsive">
+          <div class="gallery">
+              <a target="_blank" href="assets/img/lampung-ngebabali.jpg">
+                <img src="assets/img/lampung-ngebabali.jpg" alt="ngebabali" width="600" height="400">
+              </a>
+              <div class="container mt-3">
+    
+                <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#babali">
+                  <small> <strong>Lampung</strong>: Upacara Ngebabali   </small>
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal fade" id="babali">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Lampung <small> : Upacara Ngebabali</small></h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Masyarakat Lampung akan mengadakan upacara Ngebabali saat membuka lahan baru untuk berladang.
+
+Upacara adat ini juga dilakukan saat seseorang akan membuka rumah baru.
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+            
+         <div class="responsive">
+          <div class="gallery">
+              <a target="_blank" href="assets/img/pseusijek-aceh.jpg">
+                <img src="assets/img/pseusijek-aceh.jpg" alt="peusijeuk" width="600" height="400">
+              </a>
+               <div class="container mt-3">
+    
+                <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#peusi">
+                  <small> <strong>Aceh</strong>: Upacara Peusijeuk   </small>
+                </button>
+              </div>
+              
+              <!-- The Modal -->
+              <div class="modal fade" id="peusi">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Aceh <small> : Peusijeuk</small></h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      Upacara Adat Peusijuek merupakan upacara adat di Aceh, sebagai bentuk syukur terhadap keselamatan dan kesuksesan dalam meraih sesuatu.<br><br> Upacara dilakukan saat harapan yang diinginkan tercapai, seperti mempunyai sawah, mempunyai kendaraan, memperolah jabatan baru, naik haji, dan sebagainya. Upacara dipimpin tokoh agama dengan doa-doa keselamatan kepada Tuhan Yang Maha Esa.
+
+
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+            </div>
+         </div>
+  
+          
+  
+          <div class="clearfix"></div>
+                
+                <div style="padding:15px;"></div>
+      </div>
+      
+      <div class="layar-dalam">
+         
+                
+             <div class="responsive">
+              <div class="gallery">
+                  <a target="_blank" href="assets/img/mekiwuka_sulut.jpg">
+                    <img src="assets/img/mekiwuka_sulut.jpg" alt="mekikuwa" width="600" height="400">
+                  </a>
+                  <div class="container mt-3">
+    
+                    <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#mekikuwa">
+                      <small> <strong>Sulawesi Utara</strong>: Mekikuwa   </small>
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal fade" id="mekikuwa">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Sulawesi Utara <small> : Mekikuwa</small></h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Upacara adat Mekikuwa dilakukan oleh masyarakat dari Suku Minahasa, Manado, Sulawesi Utara.
+
+                          Upacara adat ini dilakukan untuk mengungkapkan rasa syukur atas pemeliharaan sepanjang tahun kepada Tuhan YME.
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+  
+             <div class="responsive">
+              <div class="gallery">
+                  <a target="_blank" href="assets/img/kasada-sukutengger.jpg">
+                    <img src="assets/img/kasada-sukutengger.jpg" alt="kasada" width="600" height="400">
+                  </a>
+                  <div class="container mt-3">
+    
+                    <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#kasada">
+                      <small> <strong>Jawa Timur</strong>: Upacara Kasada   </small>
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal fade" id="kasada">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Jawa Timur <small> : Kasada</small></h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Upacara adat ini dilakukan oleh masyarakat Suku Tengger (Jawa Timur) yang memeluk agama Hindu untuk memohon pengampunan dari Brahma atau Dewa Pencipta.
+
+                          Suku Tengger akan melempar sejumlah sesajen ke kawah Gunung Bromo dalam pelakasanaan upacara ini.
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+                
+             <div class="responsive">
+              <div class="gallery">
+                  <a target="_blank" href="assets/img/ruwatan-jateng.jpg">
+                    <img src="assets/img/ruwatan-jateng.jpg" alt="ruwatan" width="600" height="400">
+                  </a>
+                  <div class="container mt-3">
+    
+                    <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#ruwatan">
+                      <small> <strong>Jawa Tengah</strong>  :  Ruwatan  </small>
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal fade" id="ruwatan">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Jawa Tengah <small> : Ruwatan</small></h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Upacara adat yang ada di Jawa Tengah yaitu Ruwatan. Kegiatan yang dilakukan dalam tradisi ini yaitu dengan cara meruwat atau menyucikan seseorang dari segala kesialan, nasib buruk, serta memberikan keselamatan dalam menjalani hidup.
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+                
+             <div class="responsive">
+              <div class="gallery">
+                  <a target="_blank" href="assets/img/upacara-adat-Bengkulu.jpg">
+                    <img src="assets/img/upacara-adat-Bengkulu.jpg" alt="bakar gunug api" width="600" height="400">
+                  </a>
+                  <div class="container mt-3">
+    
+                    <button type="button" class="btnn btnn-primary" data-bs-toggle="modal" data-bs-target="#bakar">
+                      <small> <strong>Bengkulu </strong>: Bakar Gunung Api  </small>
+                    </button>
+                  </div>
+                  
+                  <!-- The Modal -->
+                  <div class="modal fade" id="bakar">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title">Bengkulu <small> : Bakar Gunung Api</small></h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                          Di Bengkulu upacara adatnya bernama Bakar Gunung Api. Upacara tradisi dilakukan dengan menyusun batok kelapa hingga membentuk gunungan kemudian membakarnya sebagai wujud rasa syukur kepada Tuhan sekaligus mendoakan arwah keluarga agar tentram di akhirat.
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             </div>
+  
+              <div class="clearfix"></div>
+                
+              <div style="padding:15px;"></div>
+  
+              
+  </div>
+
+  
+  </section>
+
+
+
+
+
+
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        
+
+
+
+                      
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+  <footer class="border-top" style="background-color: rgb(26, 25, 25);">
+    <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#!">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#!">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div class="small text-center text-muted fst-italic">
+            Copyright &copy; Aramita Nur Azizah
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
